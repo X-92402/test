@@ -1,0 +1,172 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121011; /* Background color for the body */
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgb(41, 38, 38);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: hsl(38, 61%, 73%);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1f1b1c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: hsl(38, 61%, 73%);
+    text-shadow: 3px 3px 3px #a16e62;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1f1b1c;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: hsl(38, 61%, 73%);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 2px #a16e62;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input {
+    background-color: #353536;
+    color: white;
+    border: 1px solid #333;
+}
+
+form button {
+    background-color: hsl(38, 61%, 73%);
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a16e62;
+    color: white;
+}
+
+/* Reservation and Menu Lists */
+#reservation-list, #menu-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #353536;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#reservation-list table, #menu-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#reservation-list th, #menu-list th {
+    background-color: hsl(38, 61%, 73%);
+    color: black;
+    padding: 10px;
+    text-align: left;
+}
+
+#reservation-list td, #menu-list td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+#reservation-list tr:hover, #menu-list tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight row on hover */
+}
+
+#reservation-list div:last-child, #menu-list div:last-child {
+    border-bottom: none;
+}
+
+/* Loading Message */
+#reservation-list.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: hsl(38, 61%, 73%);
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Reservation list styling */
+#reservation-list {
+    margin-top: 20px;
+}
+
+.reservation-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.reservation-item p {
+    margin: 5px 0;
+}

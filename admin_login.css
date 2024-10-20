@@ -1,0 +1,72 @@
+/* Reset some default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121011; /* Matches the background color used in the about section */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #1f1b1c; /* Dark background to match the site theme */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.login-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #353536; /* Matches the input background in the contact form */
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button styling */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: hsl(38, 61%, 73%); /* Matches the primary accent color */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 300ms ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-container button:hover {
+    background-color: #a16e62; /* Darker shade for hover effect */
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4d; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: none; /* Initially hidden */
+}
